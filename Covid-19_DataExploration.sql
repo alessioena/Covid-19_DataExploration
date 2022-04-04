@@ -1,0 +1,43 @@
+-- 1	Checkout datasets
+
+select *
+from coviddeaths;
+
+select *
+from covidvaccination;
+
+
+-- 2	Looking at total cases VS total deaths in the USA
+
+select location,date,total_cases,total_deaths,(total_deaths/total_cases)*100 as DeathPercentage
+from coviddeaths
+where location like '%states%'
+order by date;
+
+
+-- 3	Looking at the total cases VS population in Italy
+-- The Infection_rate shows what percentage of population got COVID
+
+select location,date,total_cases,population,(total_cases/population)*100 as Infection_rate
+from coviddeaths
+where location='italy'
+order by date;
+
+
+-- 4	Looking at countries with highest infection rate compared to population
+
+select location,population, max(total_cases) as HighestInf,max(total_cases/population)*100 as Infection_rate
+from coviddeaths
+Group by location, population
+order by Infection_rate desc;
+
+
+-- 5	Showing countries with the highest death count per population
+
+select location, max(cast(total_deaths as float)) as TotalDeathCount
+from coviddeaths
+Group by location
+order by TotalDeathCount desc;
+
+
+-- 6
