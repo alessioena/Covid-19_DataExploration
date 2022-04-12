@@ -40,4 +40,10 @@ Group by location
 order by TotalDeathCount desc;
 
 
--- 6
+-- 6	Global numbers
+
+select date,sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_deaths,sum(cast(new_deaths as float))/sum(new_cases)*100 as DeathPercentage
+from coviddeaths
+where continent is not null
+group by date
+order by 1,2
