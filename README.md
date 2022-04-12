@@ -1,3 +1,3 @@
-# Covid-19_DataExploration
+# Covid-19 Data Exploration
 
-Extrapolating informations with SQL from the COVID database realesed by ourworldindata.org.
+Extrapolating informations with SQL from the COVID database realesed by [ourworldindata.org](ourworldindata.org).
