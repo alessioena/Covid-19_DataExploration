@@ -4,15 +4,15 @@ select *
 from coviddeaths;
 
 select *
-from covidvaccination;
+from covidvaccinations;
 
 
 -- 2	Looking at total cases VS total deaths in the USA
 
 select location,date,total_cases,total_deaths,(total_deaths/total_cases)*100 as DeathPercentage
 from coviddeaths
-where location like '%states%'
-order by date;
+where location like '%states%' 
+order by 1,2;
 
 
 -- 3	Looking at the total cases VS population in Italy
@@ -21,7 +21,7 @@ order by date;
 select location,date,total_cases,population,(total_cases/population)*100 as Infection_rate
 from coviddeaths
 where location='italy'
-order by date;
+order by 1,2;
 
 
 -- 4	Looking at countries with highest infection rate compared to population
@@ -46,4 +46,21 @@ select date,sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as tota
 from coviddeaths
 where continent is not null
 group by date
-order by 1,2
+order by 1,2;
+
+
+-- 7	Total cases and total deaths in Europe
+
+select sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_deaths,sum(cast(new_deaths as float))/sum(new_cases)*100 as DeathPercentage
+from coviddeaths
+where continent='Europe'
+-- group by date
+order by 1,2;
+
+
+-- 8	Total cases and total deaths in Italy
+
+select sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_deaths,sum(cast(new_deaths as float))/sum(new_cases)*100 as DeathPercentage
+from coviddeaths
+where location='Italy'
+order by 1,2;
