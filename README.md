@@ -18,7 +18,6 @@ Looking at total cases VS total deaths in the USA
 
 Looking at the total cases VS population in Italy
 
-<img width="520" alt="Screenshot 2022-04-13 at 02 46 45" src="https://user-images.githubusercontent.com/95365607/163078090-88d5f2bc-1849-43a0-8b6e-8afca4d27cf1.png">
 
 
 ### 4° query
