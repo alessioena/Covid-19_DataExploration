@@ -4,6 +4,8 @@ Extrapolating informations with SQL from the COVID database realesed by [ourworl
 
 Period: 26/02/2020 - 11/04/2022
 
+[[Full Code]](https://github.com/alessioena/Covid-19_DataExploration/blob/main/Covid-19_DataExploration.sql)
+
 ### 1° query
 
 --> Checkout datasets
