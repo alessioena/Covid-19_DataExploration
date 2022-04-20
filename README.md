@@ -39,14 +39,7 @@ Showing countries with the highest death count per population
 Global numbers
 
 
-### 7° query
-
-Total cases and total deaths in Europe
-
-<img width="367" alt="Screenshot 2022-04-13 at 03 00 22" src="https://user-images.githubusercontent.com/95365607/163078478-fba7cde2-5275-4922-b88f-4430c5c2882e.png">
-
-
-### 8° query 
+### 7° query 
 
 Total cases and total deaths in Italy
 
