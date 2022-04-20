@@ -49,16 +49,7 @@ group by date
 order by 1,2;
 
 
--- 7	Total cases and total deaths in Europe
-
-select sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_deaths,sum(cast(new_deaths as float))/sum(new_cases)*100 as DeathPercentage
-from coviddeaths
-where continent='Europe'
--- group by date
-order by 1,2;
-
-
--- 8	Total cases and total deaths in Italy
+-- 7	Total cases and total deaths in Italy
 
 select sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_deaths,sum(cast(new_deaths as float))/sum(new_cases)*100 as DeathPercentage
 from coviddeaths
