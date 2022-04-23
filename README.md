@@ -46,7 +46,7 @@ Total cases and total deaths in Italy
 
 ### 8° query
 
-Join the datasets
+Join datasets
 
 ### 9° query
 
