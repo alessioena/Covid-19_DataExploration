@@ -55,3 +55,23 @@ select sum(new_cases) as total_cases,sum(cast(new_deaths as float)) as total_dea
 from coviddeaths
 where location='Italy'
 order by 1,2;
+
+
+-- 8	Join the datasets
+
+select *
+from coviddeaths dea
+join covidvaccinations vac
+	on dea.location = vac.location
+	and dea.date = vac.date;
+
+
+-- 9	Looking at total population vs vaccinations
+ 
+select dea.continent,dea.location,dea.date,dea.population,vac.new_vaccinations
+from coviddeaths dea
+join covidvaccinations vac
+	on dea.location = vac.location
+	and dea.date = vac.date
+where dea.continent is not null
+order by 1,2,3;
