@@ -57,7 +57,7 @@ where location='Italy'
 order by 1,2;
 
 
--- 8	Join the datasets
+-- 8	Join datasets
 
 select *
 from coviddeaths dea
