@@ -20,7 +20,6 @@ Looking at total cases VS total deaths in the USA
 Looking at the total cases VS population in Italy
 
 
-
 ### 4° query
 
 Looking at countries with highest infection rate compared to population
@@ -44,4 +43,12 @@ Global numbers
 Total cases and total deaths in Italy
 
 <img width="369" alt="Screenshot 2022-04-13 at 02 04 59" src="https://user-images.githubusercontent.com/95365607/163074120-6120930a-826f-44c6-b742-47d41deed4f1.png">
+
+## 8° query
+
+Join the datasets
+
+## 9° query
+
+Looking at total population vs vaccinations
 
